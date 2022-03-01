@@ -11,7 +11,7 @@ for i in configs:
     avg_cluster = []
     avg_pathlen = []
     avg_deg = []
-    for _ in range(5):
+    for _ in range(30):
         G = nx.erdos_renyi_graph(i[0],i[1])
         avg_cluster.append(nx.average_clustering(G))
         if nx.is_connected(G):
